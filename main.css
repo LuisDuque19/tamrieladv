@@ -1,0 +1,27 @@
+.conteudo{
+	width:100%;
+	height:700px;
+	background-image: url(https://esosslfiles-a.akamaihd.net/cms/2019/01/610381b05baa5e138817ec86034c3d91.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-size: round;
+}
+
+.main-menu{
+	background-color: black;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+.btn_menu{
+	width: 150px;
+	height: 40px;
+	border:solid 1px white;
+	font-family: Verdana;
+	font-size: 16px;
+	background-color:black;
+	color:white;
+}
+
