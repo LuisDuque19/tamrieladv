@@ -1,10 +1,11 @@
 .conteudo{
-	width:100%;
 	height:700px;
-	background-image: url(https://esosslfiles-a.akamaihd.net/cms/2019/01/610381b05baa5e138817ec86034c3d91.jpg);
+	background:url(tesbg.jpg);
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: 100% 100%;
 	background-size: round;
+	margin-left: -8px;
+	margin-right: -8px;
 }
 
 .main-menu{
@@ -13,15 +14,45 @@
 	background-size: 100%;
 	padding-top: 1%;
 	padding-bottom: 1%;
+	margin-left: -8px;
+	margin-right: -8px;
 }
 
-.btn_menu{
-	width: 150px;
-	height: 40px;
-	border:solid 1px white;
-	font-family: Planewalker;
-	font-size: 18px;
+.main-menu ul li{
+	display: inline;
+}
+
+.main-menu ul li a{
+	display: inline-block;
+	width: 170px;
+	height: 100%;
+	font-family: TW Cen Mt Condensed;
+	font-size: 24px;
 	background-color:black;
+	border:1px solid black;
 	color:white;
+	text-underline-position: unset;
+	text-decoration: none;
 }
 
+.setinha {
+	display: none;
+	height: 28px;
+	width: 40px;
+}
+
+.setinha:first-child {
+	float: left;
+}
+
+.setinha:last-child {
+	float: right;
+}
+
+.menu-item:hover .setinha {
+	display: block;
+}
+
+.logo{
+	float: left;
+}

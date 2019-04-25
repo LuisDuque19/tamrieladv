@@ -9,12 +9,14 @@
 	<center>
 	<header>
 		<div class="main-menu">
-			<input type="button" name="btn1" value="Home" onclick="" class="btn_menu">
-			<input type="button" name="btn2" value="Curiosidades" onclick="" class="btn_menu">
-			<input type="button" name="btn3" value="Exemplo3" onclick="" class="btn_menu">
-			<input type="button" name="btn4" value="Exemplo4" onclick="" class="btn_menu">
-			<input type="button" name="btn5" value="Exemplo5" onclick="" class="btn_menu">
-			<input type="button" name="btn6" value="Exemplo6" onclick="" class="btn_menu">
+		<a href="" class="logo"><img src="logo.png" width="225px" height="65px"></a>
+			<ul>
+				<li><a href="" class="menu-item" name="btn1" onclick=""><img src="borda1.png" class="setinha">HOME<img src="borda2.png" class="setinha"></a></li>
+				<li><a href="" class="menu-item" name="btn2" onclick=""><img src="borda1.png" class="setinha">NOVIDADES<img src="borda2.png" class="setinha"></a></li>
+				<li><a href="" class="menu-item" name="btn3" onclick=""><img src="borda1.png" class="setinha">MAPA<img src="borda2.png" class="setinha"></a></li>
+				<li><a href="" class="menu-item" name="btn4" onclick=""><img src="borda1.png" class="setinha">EXPLORAR<img src="borda2.png" class="setinha"></a></li>
+				<li><a href="" class="menu-item" name="btn5" onclick=""><img src="borda1.png" class="setinha">CONTATO<img src="borda2.png" class="setinha"></a></li>
+			</ul>
 		</div>
 	</header>
 
