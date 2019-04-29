@@ -1,11 +1,12 @@
 .conteudo{
 	height:700px;
-	background:url(imgs/tesbg.jpg);
+	background:url('imgs/tesbg.jpg');
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	background-size: round;
 	margin-left: -8px;
 	margin-right: -8px;
+	margin-bottom: -8px;
 }
 
 .main-menu{
@@ -51,8 +52,18 @@
 
 .menu-item:hover .setinha {
 	display: block;
+
+}
+
+.menu-item{
+	border-style: none;
 }
 
 .logo{
 	float: left;
+}
+
+#contato , #novidades , #home {
+		display: none ;
+		color: red;
 }
