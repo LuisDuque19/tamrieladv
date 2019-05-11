@@ -1,0 +1,125 @@
+body{
+    font-family: "TW Cen MT";
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+a{
+    text-decoration:none;
+    border-style: none;
+    color: white;
+    outline: none;
+}
+
+div{
+    outline: none;
+}
+
+a:visited a:active{
+    text-decoration:none;
+}
+
+.container{
+    position: relative;
+}
+
+/*********  HEADER  *********/
+
+/* Esse grid só vai servir pro Menu por enquanto, haverá outro para o conteúdo*/
+.main-menu{
+    display: grid;
+    grid-template-columns: 35% 13% 13% 13% 13% 13%;
+    grid-template-areas: "logo item item item item item";
+    grid-template-rows: 70px;
+    align-items: center;
+    margin: -8px -8px 0 -8px;
+    background-color: black;
+    color: white;
+}
+
+.main-menu ul li{
+    display: inline;
+}
+
+.main-menu ul li a{
+    grid-area: item;
+    width: 190px;
+    height: 100%;
+}
+
+.main-menu ul li a span{
+	margin-bottom: 100%;
+}
+
+.menu-item:hover .setinha{
+    display: inline-block;
+    visibility: visible;
+}
+
+.logo{
+    grid-area: logo;
+    margin-right: 60%;
+}
+
+.setinha {
+    visibility: hidden;
+	height: 28px;
+	width: 40px;
+}
+
+/*********  CONTEUDO  *********/
+
+/* imagem tem 842.5 pixels de altura e 1348 de largura*/
+
+.banner{
+    position:relative; 
+    top:0px; 
+    left:-8px;
+}
+
+.bannerImg{
+    border: 0;
+}
+
+.bannerBox{
+    position: absolute;
+    top: 674px;
+    width: 1348px;
+    height: 168.5px;
+    background-color: black;
+    opacity: 0.6;
+}
+
+.bannerText{
+    position: absolute; 
+    top:674px; 
+    left:674px;
+    color: white;
+}
+
+.botaoE{
+    width: 35px;
+    height: 35px;
+    top: 50%;
+    left: 1%;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    color: white;
+    background-color: black;
+}
+
+.botaoD{
+    width: 35px;
+    height: 35px;
+    top: 50%;
+    left: 97.5%;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    color: white;
+    background-color: black;
+}
