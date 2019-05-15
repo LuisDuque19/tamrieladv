@@ -63,7 +63,12 @@
 	float: left;
 }
 
-#contato , #novidades , #home {
+#home {
+    display: inline;
+    color: red;
+}
+
+#contato , #novidades{
 	display: none ;
 	color: red;
 }

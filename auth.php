@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    if (isset($_SESSION["logado"]) && $_SESSION["logado"] == TRUE){
+        header("Location: index.php");
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,15 +25,17 @@
 
         <div class="row">
             <div class="col-md-12" style="background-image: url(imgs/tesbg.jpg); height:700px; background-repeat: no-repeat; background-size: 100% 100%;">
-                        <div style="align-content: center;">
-                                <form method="POST" action="#">
+                        <div style="width: 250px; height: 200px; margin-top: 280px; margin-left: 500px; background-color: rgba(11, 11, 12,0.8); text-align: center; color: white;">
+                                <form method="post" action="authsession.php">
+                                <label for="user">
                                 Username:<br>
-                                <input type="text" name="username" value="">
+                                <input type="text" name="user" id="user" value="" required> </label>
                                 <br>
+                                <label for="pass">
                                 Password:<br>
-                                <input type="text" name="pass" value="">
+                                <input type="password" name="pass" id="pass" value="" required> </label>
                                 <br><br>
-                                <input type="submit" value="Submit">
+                                <button type="submit">LOGIN</button>
                                 </form>
                         </div>
             </div>
