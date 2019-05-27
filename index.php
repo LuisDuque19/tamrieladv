@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-	<center>
+
 	<header>
 		<div class="main-menu">
 		<a href="" class="logo"><img src="imgs/logo.png" width="225px" height="65px"></a>
@@ -23,7 +23,27 @@
 	<div class="conteudo">
 
 			<div id='home'>
-					CONTEUDO DA HOME AQUI
+			<center>
+					<div class="principal">
+						<div class="titulo">
+						<p class="title-par">Um pouco sobre nós</p>
+						</div>
+						<div class="image-panel">
+							<img src="imgs/img1.jpg" style="width:400px; height:350px; border-radius:15px; box-shadow:2px 2px 2px 2px; 
+							-webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+                            -moz-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);">
+							<div class="fix-img">
+							<img src="imgs/img2.jpg" style="width:400px; height:350px; border-radius:15px; box-shadow:3px 3px 2px 2px;
+							 -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+                            -moz-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);">
+							</div>	
+						</div>
+						<div class="text-panel">Tamriel Adventures é um site sobre o universo da aclamada franquia de jogos The Elder Scrolls da empresa Bethesda Softworks. Abordamos conteúdo geral 
+							sobre o jogo. Uma das principais ferramentas é a visualização de todo o mapa de Tamriel, e o fato de você poder selecionar um determinada área do mapa e explora-la da maneira 
+							como desejar.
+						</div>
+					</div>
+			<center>		
 			</div>
 		
 			<div id='contato'>
@@ -38,7 +58,10 @@
 		 
 	 
 	</div>
-	</center>
+	<div class="rodape"> 
+		
+	</div>
+
 
 	<script>
 		//js de teste, pode ser mudado pra jquery depois

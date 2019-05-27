@@ -1,5 +1,5 @@
 .conteudo{
-	height:700px;
+	height:1000px;
 	background:url('imgs/tesbg.jpg');
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
@@ -17,6 +17,7 @@
 	padding-bottom: 1%;
 	margin-left: -8px;
 	margin-right: -8px;
+	text-align: center;
 }
 
 .main-menu ul li{
@@ -65,10 +66,54 @@
 
 #home {
     display: inline;
-    color: red;
+	color: white;
+	margin: 0%;
+	font-family: TW Cen MT Condensed;
 }
 
 #contato , #novidades{
 	display: none ;
 	color: red;
+}
+
+.rodape{
+	height: 80px;
+	background-color: black;
+	background-size: 100%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	margin-left: -8px;
+	margin-right: -8px;
+}
+
+.principal{
+	padding-top:3%;
+	width:80%;
+	height: 30%;
+}
+
+.image-panel{
+	float: left;
+}
+
+.fix-img{
+	margin-top:3%;
+}
+
+.text-panel{
+	margin-top: 10%;
+	font-size: 32px;
+	font-style: oblique;
+	text-shadow: 0.1em 0.1em 0.2em black;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	direction: ltr;
+}
+
+.title-par{
+	font-size: 48px;
+	font-weight: bold;
+	margin-left:70%;
+	font-style: oblique;
+	text-shadow: 0.1em 0.1em 0.2em black
 }
