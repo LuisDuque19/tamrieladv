@@ -25,7 +25,7 @@
 
         <div class="row">
             <div class="col-md-12" style="background-image: url(imgs/tesbg.jpg); height:700px; background-repeat: no-repeat; background-size: 100% 100%;">
-                        <div style="width: 250px; height: 200px; margin-top: 280px; margin-left: 500px; background-color: rgba(11, 11, 12,0.8); text-align: center; color: white;">
+                        <div style="width: 250px; height: 200px; margin-top: 15%; margin-left: 45%; background-color: rgba(11, 11, 12,0.8); text-align: center; color: white;">
                                 <form method="post" action="authsession.php">
                                 <label for="user">
                                 Username:<br>
