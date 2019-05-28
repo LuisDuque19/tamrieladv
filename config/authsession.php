@@ -2,8 +2,8 @@
     
     session_start();
     
-    $user = array("gabriel", "teste1", "teste2");
-    $pass = array("teste", "senha1", "senha2");
+    $user = array("gabriel", "teste1", "teste2", "admin");
+    $pass = array("teste", "senha1", "senha2", "admin");
     
     $userlength = count($user);
 
@@ -23,8 +23,8 @@
         $_SESSION["logado"] = TRUE;
         $_SESSION["user"] = $_POST["user"];
         
-        header("Location: index.php");
+        header("Location: ../index.php");
     }
-    else { header("Location: auth.php"); }
+    else { header("Location: ../auth.php"); }
 
 ?>

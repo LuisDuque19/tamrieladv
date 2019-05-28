@@ -1,7 +1,12 @@
+<?php
+    include './config/dbConnection.php';
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Teste</title>
+	<title>Tamriel Adventures</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
@@ -43,7 +48,7 @@
 							como desejar.
 						</div>
 					</div>
-			<center>		
+                </center>		
 			</div>
 		
 			<div id='contato'>
@@ -51,7 +56,11 @@
 			</div>
 
 			<div id='novidades'>
-					CONTEUDO DE NOVIDADES AQUI
+                <div style="background-color:gray">
+					<?php 
+                        pegaNoticias();
+                    ?>
+                </div>
 			</div>
 
 		
@@ -59,7 +68,12 @@
 	 
 	</div>
 	<div class="rodape"> 
-		
+		<?php
+            if (isset($_SESSION["logado"]) && $_SESSION["logado"] == TRUE){ 
+                echo "<a href='config/sessionDestroy.php'> deslogar </a>" ;
+            }
+            
+        ?>
 	</div>
 
 
@@ -98,3 +112,5 @@
 	</script>	
 </body>
 </html>
+
+<?php  mysqli_close($connection); ?>
