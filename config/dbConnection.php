@@ -53,7 +53,7 @@
     function pegaNoticiasAdmin(){
         global $tabela;
          while($linha = mysqli_fetch_assoc($tabela)) {
-            echo "<tr> <td>{$linha['titulo']}</td> <td>{$linha['resumo']}</td> <td><a href='/config/editNoticia.php?id={$linha['id']}'>edit</a></td> <td><a href='/config/deleteNoticia.php?id={$linha['id']}'>delete</a> </td> </tr> ";
+            echo "<tr> <td>{$linha['titulo']}</td> <td>{$linha['resumo']}</td> <td><a href='./config/editNoticia.php?id={$linha['id']}'>edit</a></td> <td><a href='./config/deleteNoticia.php?id={$linha['id']}'>delete</a> </td> </tr> ";
         }
     }
 ?>

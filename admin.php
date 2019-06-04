@@ -24,7 +24,7 @@
     </head>
     <body>
         <h2>Adicionar notícia: </h2>
-        <form method="POST" action="/config/salvarNoticia.php">
+        <form method="POST" action="config/salvarNoticia.php">
             <label>Título:</label>
             <input type="text" id="titulo" name="titulo">
             <label>Resumo:</label>

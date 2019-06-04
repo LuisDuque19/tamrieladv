@@ -52,7 +52,9 @@
 			</div>
 		
 			<div id='contato'>
-					 CONTEUDO DE CONTATO AQUI
+					 <div class="about-table">
+					 	
+					 </div>
 			</div>
 
 			<div id='novidades'>

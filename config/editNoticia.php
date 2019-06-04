@@ -11,7 +11,7 @@
             else {
 ?>
             <h2>Editar notícia: </h2>
-                <?php echo "<form method='POST' action='/config/editNoticiaFinal.php'>" ?>
+                <?php echo "<form method='POST' action='config/editNoticiaFinal.php'>" ?>
                 <input type="text" id="id" name="id" value="<?php echo $_GET['id']; ?>" readonly>
                 <label>Título:</label>
                 <input type="text" id="titulo" name="titulo">
