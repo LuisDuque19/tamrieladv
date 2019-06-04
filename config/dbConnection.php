@@ -1,7 +1,7 @@
 <?php
 
 
-    $connection = mysqli_connect('localhost', 'root', '1234', 'tamrielnoticias');
+    $connection = mysqli_connect('localhost', 'root', '', 'tamrielnoticias');
     if (!$connection) {
         die("Database connection failed: " . mysqli_connect_error());
     }
