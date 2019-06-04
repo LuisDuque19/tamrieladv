@@ -14,7 +14,7 @@
     function pegaNoticias(){
          global $tabela;
          while($linha = mysqli_fetch_assoc($tabela)) {
-            echo "<a href='noticia.php?idnoticia={$linha['id']}' style='text-decoration: none;'>{$linha['titulo']} <br> {$linha['resumo']} <br> <br> </a>";
+            echo "<a href='noticia.php?idnoticia={$linha['id']}' style='text-decoration: none;'> <h1 class='tituloNoticia'>{$linha['titulo']} </h1> <p class='resumoNoticia'>{$linha['resumo']}</p> </a>";
         }
     }
     
@@ -46,7 +46,7 @@
         global $connection;
         $pegaNoticia = mysqli_query($connection, 'select * from noticias where id = ' . $id);
         while($linha = mysqli_fetch_assoc($pegaNoticia)) {
-            echo "<h2>{$linha['titulo']}</h2> <br> <h4>{$linha['resumo']}</h4> <br> <br> <p>{$linha['noticia']}</p>";
+            echo "<h1>{$linha['titulo']}</h1> <h3>{$linha['resumo']}</h3> <br>  <p>{$linha['noticia']}</p>";
         }
     }
 

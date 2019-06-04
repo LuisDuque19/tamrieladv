@@ -58,7 +58,7 @@
 			</div>
 
 			<div id='novidades'>
-                <div style="background-color:gray">
+                <div class="noticias" style="background-color:#dfd3d3">
 					<?php 
                         pegaNoticias();
                     ?>
