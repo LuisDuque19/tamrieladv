@@ -9,7 +9,7 @@
                 header("Location: ../index.php");
             }
             else {
-    if(salvaNoticia($_POST['titulo'], $_POST['resumo'], $_POST['noticia'])){
+    if(salvaNoticia($_POST['titulo'], $_POST['resumo'], $_POST['noticia'], $_POST['imagem'])){
         header("Location: ../admin.php");
     }
 ?>

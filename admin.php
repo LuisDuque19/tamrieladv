@@ -31,6 +31,8 @@
             <input type="text" id="resumo" name="resumo">
             <label>Notícia:</label>
             <input type="text" id="noticia" name="noticia">
+            <label>Imagem (link):</label>
+            <input type="text" id="image" name="imagem">
             <button type="submit">Enviar</button>
         </form>
         <br>

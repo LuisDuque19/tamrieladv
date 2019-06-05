@@ -14,14 +14,14 @@
     function pegaNoticias(){
          global $tabela;
          while($linha = mysqli_fetch_assoc($tabela)) {
-            echo "<a href='noticia.php?idnoticia={$linha['id']}' style='text-decoration: none;'> <h1 class='tituloNoticia'>{$linha['titulo']} </h1> <p class='resumoNoticia'>{$linha['resumo']}</p> </a>";
+            echo "<a href='noticia.php?idnoticia={$linha['id']}' style='text-decoration: none;'> <h1 class='tituloNoticia'>{$linha['titulo']} </h1> <img src='{$linha['imagem']}'  height='100' width='250'> <p class='resumoNoticia'>{$linha['resumo']}</p> </a>";
         }
     }
     
-    function salvaNoticia($titulo, $resumo, $noticia){
+    function salvaNoticia($titulo, $resumo, $noticia, $imagem){
         /* insert into*/
         global $connection;
-        mysqli_query($connection, "INSERT INTO noticias (titulo, resumo, noticia) VALUES ('{$titulo}','{$resumo}','{$noticia}')");
+        mysqli_query($connection, "INSERT INTO noticias (titulo, resumo, noticia, imagem) VALUES ('{$titulo}','{$resumo}','{$noticia}','{$imagem}')");
         return true;
     }
     
@@ -32,12 +32,12 @@
         return true;
     }
     
-    function editaNoticia($id, $titulo, $resumo, $noticia){
+    function editaNoticia($id, $titulo, $resumo, $noticia, $imagem){
         /*UPDATE table_name
         SET column1 = value1, column2 = value2, ...
         WHERE condition; */
         global $connection;
-        mysqli_query($connection, "UPDATE noticias SET titulo = '{$titulo}', resumo = '{$resumo}', noticia = '{$noticia}' WHERE id = {$id}");
+        mysqli_query($connection, "UPDATE noticias SET titulo = '{$titulo}', resumo = '{$resumo}', noticia = '{$noticia}', imagem = '{$imagem}' WHERE id = {$id}");
         return true;
     }
 
@@ -46,7 +46,7 @@
         global $connection;
         $pegaNoticia = mysqli_query($connection, 'select * from noticias where id = ' . $id);
         while($linha = mysqli_fetch_assoc($pegaNoticia)) {
-            echo "<h1>{$linha['titulo']}</h1> <h3>{$linha['resumo']}</h3> <br>  <p>{$linha['noticia']}</p>";
+            echo "<h1>{$linha['titulo']}</h1> <h3>{$linha['resumo']}</h3> <br> <img src='{$linha['imagem']}'  height='350' width='400'>   <p>{$linha['noticia']}</p>";
         }
     }
 

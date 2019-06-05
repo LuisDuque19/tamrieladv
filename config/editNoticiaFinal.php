@@ -8,7 +8,7 @@
     else { if($_SESSION["user"] != 'admin'){
                 header("Location: ../index.php");
             }
-            else { if(editaNoticia($_POST['id'], $_POST['titulo'], $_POST['resumo'], $_POST['noticia'])){
+            else { if(editaNoticia($_POST['id'], $_POST['titulo'], $_POST['resumo'], $_POST['noticia'], $_POST['imagem'])){
                        
                        header("Location: ../admin.php");
                     }
