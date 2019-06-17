@@ -31,8 +31,12 @@
         </div>
         <div class="row">
             <div class="col-md-12" style="background-image: url(imgs/tesbg.jpg); height:700px; background-repeat: no-repeat; background-size: 100% 100%;">
-                        <div style="width: 250px; height: 265px; margin-top: 15%; margin-left: 45%; background-color: rgba(11, 11, 12,0.8); text-align: center; color: white;">
-                                <form method="post" action="config/authsession.php">
+                        <div style="width: 250px; height: 320px; margin-top: 15%; margin-left: 45%; background-color: rgba(11, 11, 12,0.8); text-align: center; color: white;">
+                                <form method="post" action="config/registersession.php">
+                                <label for="email">
+                                Email:<br>
+                                <input type="email" name="email" id="email" value="" required> </label>
+                                <br>
                                 <label for="login">
                                 Login:<br>
                                 <input type="text" name="login" id="login" value="" required> </label>
@@ -41,19 +45,19 @@
                                 Senha:<br>
                                 <input type="password" name="senha" id="senha" value="" required> </label>
                                 <br><br>
-                                <button type="submit">LOGIN</button><br><br>
+                                <button type="submit">REGISTRAR</button><br><br>
                                 </form>
-                                <span>Não tem uma conta?</span><br>
-                                <button onClick="register()">REGISTRE-SE</button><br>
+                                <span>Já tem uma conta?</span><br>
+                                <button onclick="Login()">ENTRE</button><br>
                         </div>
             </div>
         </div>
     </div>
 
     <script>
-        function register(){
-            window.open("register.php");
+        function Login(){
+            window.open("auth.php");
         }
     </script>
-</body>
+    </body>
 </html>
