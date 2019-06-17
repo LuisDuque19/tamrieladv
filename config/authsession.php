@@ -1,29 +1,30 @@
 <?php
     
     session_start();
-    include("./dbConnection.php");
+    
+    $user = array("gabriel", "teste1", "teste2", "admin");
+    $pass = array("teste", "senha1", "senha2", "admin");
+    
+    $userlength = count($user);
 
-    if(empty($_POST['login']) || empty($_POST['senha'])){
-        header('Location: ../auth.php');
-        exit();
+    $msg = FALSE;
+    
+    for($i = 0 ; $i < $userlength ; $i++) {
+        if($_POST["user"] == $user[$i] && $_POST["pass"] == $pass[$i]){
+            
+            $msg = TRUE;
+            break;
+            
+        }
     }
 
-    $login = mysqli_real_escape_string($connection, $_POST['login']);
-    $senha = mysqli_real_escape_string($connection, $_POST['senha']);
-
-    $query = "select Login from usuario where Login = '{$login}' and Senha = md5('{$senha}')";
-
-    $result = mysqli_query($connection, $query);
-
-    $row = mysqli_num_rows($result);
-
-    if($row == 1){
-        $_SESSION['login'] = $login;
-        $_SESSION['logado'] = true;
-        header('Location: ../index.php');
-    } else {
-        $_SESSION['nao_autenticado'] = true;
-        header('Location: ../auth.php');
-        exit();
+    if($msg){
+        
+        $_SESSION["logado"] = TRUE;
+        $_SESSION["user"] = $_POST["user"];
+        
+        header("Location: ../index.php");
     }
+    else { header("Location: ../auth.php"); }
+
 ?>

@@ -19,7 +19,7 @@
 				<li><a href="#" class="menu-item" name="btn1" onclick="loadHome()"><img src="imgs/borda1.png" class="setinha">HOME<img src="imgs/borda2.png" class="setinha"></a></li>
 				<li><a href="#" class="menu-item" name="btn2" onclick="loadNovidades()"><img src="imgs/borda1.png" class="setinha">NOVIDADES<img src="imgs/borda2.png" class="setinha"></a></li>
 				<li><a href="mapa.php" class="menu-item" name="btn3" onclick=""><img src="imgs/borda1.png" class="setinha">MAPA<img src="imgs/borda2.png" class="setinha"></a></li>
-				<li><a href="explorar.php" class="menu-item" name="btn4" onclick=""><img src="imgs/borda1.png" class="setinha">EXPLORAR<img src="imgs/borda2.png" class="setinha"></a></li>
+				
 				<li><a href="#" class="menu-item" name="btn5" onclick="loadContato()"><img src="imgs/borda1.png" class="setinha">CONTATO<img src="imgs/borda2.png" class="setinha"></a></li>
 			</ul>
 		</div>

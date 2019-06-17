@@ -1,7 +1,7 @@
 <?php
 
 
-    $connection = mysqli_connect('localhost', 'root', '', 'TADV');
+    $connection = mysqli_connect('localhost', 'root', '1234', 'TADV');
     if (!$connection) {
         die("Database connection failed: " . mysqli_connect_error());
     }

@@ -19,7 +19,7 @@
         <div class="row">
             <div class="col-md-12" style="background-color: black; height: 92px;">
                 <img src="imgs/logo.png" style="float:left; width: 15%;">
-                <h3 style="float: right; color: white;"><a href="/" style="text-decoration: none; color: white;">🡐 Voltar </a> </h3>
+                <h3 style="float: right; color: white;"><a href="index.php" style="text-decoration: none; color: white;">🡐 Voltar </a> </h3>
             </div>
         </div>
 
